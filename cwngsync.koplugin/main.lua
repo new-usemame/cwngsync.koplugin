@@ -3,6 +3,7 @@ local ConfirmBox = require("ui/widget/confirmbox")
 local Delivery = require("delivery")
 local DeviceActions = require("device_actions")
 local DeviceCollections = require("device_collections")
+local DeviceIdentity = require("device_identity")
 local Device = require("device")
 local Dispatcher = require("dispatcher")
 local Event = require("ui/event")
@@ -32,15 +33,17 @@ local LibraryRuntime = require("cwng_library_runtime")
 local Setup = require("cwng_setup")
 local SetupFlow = require("cwng_setup_flow")
 
-if G_reader_settings:hasNot("device_id") then
-    G_reader_settings:saveSetting("device_id", random.uuid())
-end
+-- A settings file copied from another e-reader carries that e-reader's ID.
+local device_id_replaced = DeviceIdentity.settle(G_reader_settings, {
+    isKindle = Device:isKindle(),
+    isKobo = Device:isKobo(),
+}, md5, random.uuid)
 
 local CWNGSync = WidgetContainer:extend{
     name = "cwngsync",
     settings_key = "cwngsync",
     title = _("Login to NextGen Server"),
-    version = "4.1.44",  -- Plugin version mirrors CWNG release tag; keep in lockstep with _meta.lua
+    version = "4.1.45",  -- Plugin version mirrors CWNG release tag; keep in lockstep with _meta.lua
 
     push_timestamp = nil,
     pull_timestamp = nil,
@@ -118,6 +121,14 @@ function CWNGSync:init()
     self.settings = migrated_settings
         or G_reader_settings:readSetting("cwngsync", self.default_settings)
     self.device_id = G_reader_settings:readSetting("device_id")
+    if device_id_replaced then
+        device_id_replaced = false
+        UIManager:nextTick(function()
+            UIManager:show(InfoMessage:new{
+                text = _("KOReader's settings on this e-reader were copied from another device, including its sync ID. This e-reader now has its own ID, so the server lists it as a separate device."),
+            })
+        end)
+    end
 
     self.ui.menu:registerToMainMenu(self)
     self:installOpenHook()
@@ -351,10 +362,14 @@ function CWNGSync:addToMainMenu(menu_items)
                 callback = function()
                     self.settings.library_enabled = not self.settings.library_enabled
                     if self.settings.library_enabled then
-                        self:applyReaderDefaults()
+                        -- A reader turning this on already has KOReader set up
+                        -- (a home folder, another home-screen plugin): that is
+                        -- theirs, so only the library is shown (#2329).
+                        self:showLibrary()
                         self:syncLibrary({ force = true, interactive = true })
                     else
                         Home.closeFor(self.ui)
+                        self:restoreReaderDefaults()
                     end
                 end,
             },
@@ -1237,38 +1252,64 @@ function CWNGSync:syncDeviceCapabilities(interactive, ensure_networking)
             end)
     end
 
-    client:claim_deletion(
-        self.settings.username, self.settings.password, Device.model, self.device_id,
-        function(ok, body, reason)
-            if not ok or type(body) ~= "table" then
-                logger.warn("CWNGSync: deletion claim failed", reason or "unknown error")
-                syncCollections()
-                return
-            end
-            local deletion = body.deletion
-            if type(deletion) ~= "table" then
-                syncCollections()
-                return
-            end
-            local deleted, delete_reason, deleted_path = DeviceActions.deleteNamed(
-                deletion, root_path, {
-                    attributes = lfs.attributes,
-                    digest = function(path) return self:getDocumentDigest(path) end,
-                    remove = util.removeFile,
-                })
-            client:complete_deletion(
-                self.settings.username, self.settings.password, Device.model, self.device_id,
-                deletion.id, deletion.claim_token, deleted, delete_reason,
-                function(completed, _complete_body, complete_reason)
-                    if completed and deleted_path then
-                        self:refreshLibraryViews({ deleted_path })
-                    elseif not completed then
-                        logger.warn("CWNGSync: deletion acknowledgement failed",
-                            complete_reason or "unknown error")
-                    end
-                    syncCollections()
-                end)
-        end)
+    -- The server hands out one named deletion per claim, so a sync drains the
+    -- queue claim by claim (#2328: claiming once removed one file per sync).
+    local deleted_paths = {}
+    local function finishDeletions()
+        if #deleted_paths > 0 then
+            self:refreshLibraryViews(deleted_paths)
+        end
+        syncCollections()
+    end
+
+    local function drainDeletions(remaining)
+        client:claim_deletion(
+            self.settings.username, self.settings.password, Device.model, self.device_id,
+            function(ok, body, reason)
+                if not ok or type(body) ~= "table" then
+                    logger.warn("CWNGSync: deletion claim failed", reason or "unknown error")
+                    finishDeletions()
+                    return
+                end
+                local deletion = body.deletion
+                if type(deletion) ~= "table" then
+                    finishDeletions()
+                    return
+                end
+                local deleted, delete_reason, deleted_path = DeviceActions.deleteNamed(
+                    deletion, root_path, {
+                        attributes = lfs.attributes,
+                        digest = function(path) return self:getDocumentDigest(path) end,
+                        remove = util.removeFile,
+                    })
+                client:complete_deletion(
+                    self.settings.username, self.settings.password, Device.model, self.device_id,
+                    deletion.id, deletion.claim_token, deleted, delete_reason,
+                    function(completed, _complete_body, complete_reason)
+                        if not completed then
+                            -- The row stays claimed and the next claim would
+                            -- return it again; leave it for the next sync.
+                            logger.warn("CWNGSync: deletion acknowledgement failed",
+                                complete_reason or "unknown error")
+                            finishDeletions()
+                            return
+                        end
+                        if deleted_path then
+                            table.insert(deleted_paths, deleted_path)
+                        end
+                        if remaining > 1 then
+                            -- Not nextTick: sync requests block unless Turbo
+                            -- is on, and KOReader runs a nextTick chain to the
+                            -- end before it reads a single tap. A task that is
+                            -- not yet due lets the reader in between deletions.
+                            UIManager:scheduleIn(0.5, function() drainDeletions(remaining - 1) end)
+                        else
+                            finishDeletions()
+                        end
+                    end)
+            end)
+    end
+    drainDeletions(50)
 end
 
 function CWNGSync:getDeliveryReceipt(delivery_id)
@@ -1501,7 +1542,10 @@ function CWNGSync:collectDeliveries(
                     self:clearDeliveryReceipt(delivery.id)
                     logger.info("CWNGSync: queued book installed", installed.lpath)
                     if remaining > 1 then
-                        UIManager:nextTick(function()
+                        -- Not nextTick: as with deletions, each claim and
+                        -- download blocks, and a chain of tasks due at once
+                        -- holds the screen until the last book (#2329).
+                        UIManager:scheduleIn(0.5, function()
                             self:collectDeliveries(
                                 interactive, false, remaining - 1, collected + 1,
                                 true, collection_token)

@@ -1,0 +1,771 @@
+# Translation template for the cwngsync.koplugin KOReader plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: cwngsync.koplugin\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: CWNGSyncClient.lua:68 cwng_library_runtime.lua:847
+msgid "no response from server"
+msgstr ""
+
+#: CWNGSyncClient.lua:71
+msgid "the server took too long to answer"
+msgstr ""
+
+#: CWNGSyncClient.lua:73
+msgid "that address does not answer over https"
+msgstr ""
+
+#: CWNGSyncClient.lua:75
+msgid "nothing answered at that address"
+msgstr ""
+
+#: CWNGSyncClient.lua:77
+msgid "that address could not be found"
+msgstr ""
+
+#: CWNGSyncClient.lua:79
+msgid "this device could not reach that address"
+msgstr ""
+
+#: CWNGSyncClient.lua:83
+msgid "the server answered with error %1"
+msgstr ""
+
+#: _meta.lua:12
+msgid "NextGen Progress Sync"
+msgstr ""
+
+#: _meta.lua:13
+msgid "Synchronizes your reading progress to Calibre-Web NextGen and across your KOReader devices."
+msgstr ""
+
+#: cwng_auto_sync.lua:412
+msgid "Could not send your reading to CWNG: %1"
+msgstr ""
+
+#: cwng_auto_sync.lua:425
+msgid "Synced with CWNG."
+msgstr ""
+
+#: cwng_home.lua:42
+msgid "Reading"
+msgstr ""
+
+#: cwng_home.lua:43
+msgid "Recent"
+msgstr ""
+
+#: cwng_home.lua:44
+msgid "Shelves"
+msgstr ""
+
+#: cwng_home.lua:45
+msgid "Authors"
+msgstr ""
+
+#: cwng_home.lua:46
+msgid "Series"
+msgstr ""
+
+#: cwng_home.lua:148 cwng_home.lua:361 cwng_home.lua:363 cwng_home.lua:365
+msgid "Library"
+msgstr ""
+
+#: cwng_home.lua:339
+msgid "No books match “%1”."
+msgstr ""
+
+#: cwng_home.lua:341
+msgid "No downloaded books here. Choose Show all books in the menu."
+msgstr ""
+
+#: cwng_home.lua:343
+msgid "Your books appear here after the first sync."
+msgstr ""
+
+#: cwng_home.lua:345
+msgid "Books you start reading appear here."
+msgstr ""
+
+#: cwng_home.lua:347
+msgid "Shelves you make in CWNG appear here."
+msgstr ""
+
+#: cwng_home.lua:349
+msgid "No books in a series."
+msgstr ""
+
+#: cwng_home.lua:351
+msgid "Nothing here yet."
+msgstr ""
+
+#: cwng_home.lua:357
+msgid "“%1”"
+msgstr ""
+
+#: cwng_home.lua:483
+msgid "This book is still being added to this device. Try again in a moment."
+msgstr ""
+
+#: cwng_home.lua:525
+msgid "Open"
+msgstr ""
+
+#: cwng_home.lua:525
+msgid "Download and open"
+msgstr ""
+
+#: cwng_home.lua:541
+msgid "Search your library"
+msgstr ""
+
+#: cwng_home.lua:543
+msgid "Title, author or series"
+msgstr ""
+
+#: cwng_home.lua:547 cwng_pairing_screen.lua:71 cwng_setup_flow.lua:261 main.lua:728
+msgid "Cancel"
+msgstr ""
+
+#: cwng_home.lua:552
+msgid "Search"
+msgstr ""
+
+#: cwng_home.lua:585
+msgid "CWNG library of %1"
+msgstr ""
+
+#: cwng_home.lua:588 main.lua:350
+msgid "Sync now"
+msgstr ""
+
+#: cwng_home.lua:592
+msgid "Show all books"
+msgstr ""
+
+#: cwng_home.lua:592
+msgid "Show only downloaded books"
+msgstr ""
+
+#: cwng_home.lua:597
+msgid "Browse files"
+msgstr ""
+
+#: cwng_home.lua:601
+msgid "KOReader menu"
+msgstr ""
+
+#: cwng_home.lua:663
+msgid "New on this device: %1"
+msgstr ""
+
+#: cwng_home.lua:326
+msgid "1 downloaded book"
+msgid_plural "%1 downloaded books"
+msgstr[0] ""
+msgstr[1] ""
+
+#: cwng_home.lua:328
+msgid "1 book"
+msgid_plural "%1 books"
+msgstr[0] ""
+msgstr[1] ""
+
+#: cwng_home.lua:332
+msgid "1 shelf"
+msgid_plural "%1 shelves"
+msgstr[0] ""
+msgstr[1] ""
+
+#: cwng_home.lua:333
+msgid "1 author"
+msgid_plural "%1 authors"
+msgstr[0] ""
+msgstr[1] ""
+
+#: cwng_home.lua:334
+msgid "1 series"
+msgid_plural "%1 series"
+msgstr[0] ""
+msgstr[1] ""
+
+#: cwng_library_runtime.lua:670
+msgid "Adding %1 books to your library…"
+msgstr ""
+
+#: cwng_library_runtime.lua:702
+msgid "the network went away; the rest comes on the next sync"
+msgstr ""
+
+#: cwng_library_runtime.lua:725
+msgid "the server stopped answering; the rest comes on the next sync"
+msgstr ""
+
+#: cwng_library_runtime.lua:742
+msgid "Adding books to your library: %1 of %2"
+msgstr ""
+
+#: cwng_library_runtime.lua:758 cwng_library_runtime.lua:863 cwng_library_runtime.lua:931
+msgid "something went wrong while updating the library"
+msgstr ""
+
+#: cwng_library_runtime.lua:813
+msgid "Books from the account this device used before are now in the folder “%1”. Menu ▸ Browse files shows them."
+msgstr ""
+
+#: cwng_library_runtime.lua:817
+msgid "The books this account had on the device before are back in the library."
+msgstr ""
+
+#: cwng_library_runtime.lua:839
+msgid "Your library is updated, except %1 books. They are tried again on the next sync."
+msgstr ""
+
+#: cwng_library_runtime.lua:844
+msgid "Your library is up to date."
+msgstr ""
+
+#: cwng_library_runtime.lua:847
+msgid "Could not update your library: %1"
+msgstr ""
+
+#: cwng_library_runtime.lua:886
+msgid "the server's list of books did not arrive"
+msgstr ""
+
+#: cwng_library_runtime.lua:903
+msgid "the server's list of books did not finish"
+msgstr ""
+
+#: cwng_library_runtime.lua:909
+msgid "Getting your library list: %1 of %2 books"
+msgstr ""
+
+#: cwng_library_runtime.lua:950
+msgid "the download was incomplete"
+msgstr ""
+
+#: cwng_library_runtime.lua:955
+msgid "the downloaded file was damaged"
+msgstr ""
+
+#: cwng_library_runtime.lua:1011 cwng_library_runtime.lua:1090
+msgid "Downloading %1…"
+msgstr ""
+
+#: cwng_library_runtime.lua:1024
+msgid ""
+"Could not download %1.\n"
+"\n"
+"%2\n"
+"\n"
+"Check that Wi-Fi is on and try again."
+msgstr ""
+
+#: cwng_library_runtime.lua:1101
+msgid ""
+"Could not download %1.\n"
+"\n"
+"%2"
+msgstr ""
+
+#: cwng_pairing_screen.lua:42
+msgid "Connect to your library"
+msgstr ""
+
+#: cwng_pairing_screen.lua:50
+msgid ""
+"Scan this with your phone's camera and tap Approve.\n"
+"\n"
+"Or open %1 and enter:"
+msgstr ""
+
+#: cwng_pairing_screen.lua:64
+msgid "This screen continues by itself once you approve."
+msgstr ""
+
+#: cwng_setup_flow.lua:121
+msgid ""
+"Connected to %1.\n"
+"\n"
+"Your library is being added now. Covers appear as they arrive; tap any book to read it."
+msgstr ""
+
+#: cwng_setup_flow.lua:153
+msgid "The setup file inside the CWNG plugin could not be used. Connect with a code instead: Tools ▸ CWNG library ▸ Connect this device."
+msgstr ""
+
+#: cwng_setup_flow.lua:174
+msgid "This ready-made plugin's sign-in was switched off on the website. Download a new one, or connect with a code: Tools ▸ CWNG library ▸ Connect this device."
+msgstr ""
+
+#: cwng_setup_flow.lua:198
+msgid ""
+"Read your CWNG library on this device.\n"
+"\n"
+"Choose how to connect:"
+msgstr ""
+
+#: cwng_setup_flow.lua:202
+msgid "Connect with a code (easiest)"
+msgstr ""
+
+#: cwng_setup_flow.lua:209
+msgid "Sign in with username and password"
+msgstr ""
+
+#: cwng_setup_flow.lua:223
+msgid "That username or password was not accepted. Try again from Tools ▸ CWNG library ▸ Connect this device."
+msgstr ""
+
+#: cwng_setup_flow.lua:224
+msgid "Could not reach %1. Check the address and that this device is on Wi-Fi."
+msgstr ""
+
+#: cwng_setup_flow.lua:234
+msgid "Not now"
+msgstr ""
+
+#: cwng_setup_flow.lua:238
+msgid "Don't ask again"
+msgstr ""
+
+#: cwng_setup_flow.lua:253
+msgid "Your CWNG address"
+msgstr ""
+
+#: cwng_setup_flow.lua:254
+msgid "The address you open CWNG at in a browser, for example books.example.com or 192.168.1.20:8083."
+msgstr ""
+
+#: cwng_setup_flow.lua:266
+msgid "Continue"
+msgstr ""
+
+#: cwng_setup_flow.lua:273
+msgid "That doesn't look like a web address. Type it the way you would in a browser."
+msgstr ""
+
+#: cwng_setup_flow.lua:318
+msgid "%1 cannot approve devices by code yet. Choose Sign in with username and password instead."
+msgstr ""
+
+#: cwng_setup_flow.lua:321
+msgid "%1 did not accept a pairing request. If that is your CWNG address, it may be too old to pair by code: choose Sign in with username and password instead."
+msgstr ""
+
+#: cwng_setup_flow.lua:330
+msgid ""
+"Could not start pairing with %1: %2\n"
+"\n"
+"Check the address, and that KOReader sync is switched on in CWNG's settings."
+msgstr ""
+
+#: cwng_setup_flow.lua:361
+msgid "Lost contact with %1 while waiting for approval. Choose Connect this device to try again."
+msgstr ""
+
+#: cwng_setup_flow.lua:363 cwng_setup_flow.lua:383
+msgid "The code expired. Choose Connect this device to get a new one."
+msgstr ""
+
+#: cwng_setup_flow.lua:374
+msgid "Approved, but signing in failed. Try Connect this device again."
+msgstr ""
+
+#: cwng_setup_flow.lua:380
+msgid "The request was declined on the website."
+msgstr ""
+
+#: cwng_setup_flow.lua:406
+msgid "This device is disconnected from CWNG. Your downloaded books stay on it."
+msgstr ""
+
+#: main.lua:48
+msgid "Login to NextGen Server"
+msgstr ""
+
+#: main.lua:133
+msgid "KOReader's settings on this e-reader were copied from another device, including its sync ID. This e-reader now has its own ID, so the server lists it as a separate device."
+msgstr ""
+
+#: main.lua:188
+msgid "Not available"
+msgstr ""
+
+#: main.lua:195 main.lua:566 main.lua:600
+msgid "Never"
+msgstr ""
+
+#: main.lua:201 main.lua:557 main.lua:591
+msgid "Prompt"
+msgstr ""
+
+#: main.lua:203
+msgid "Auto"
+msgstr ""
+
+#: main.lua:205
+msgid "Disable"
+msgstr ""
+
+#: main.lua:211
+msgid "Progress has been synchronized."
+msgstr ""
+
+#: main.lua:218
+msgid "Please login before using the progress synchronization feature."
+msgstr ""
+
+#: main.lua:225
+msgid "Something went wrong when syncing progress, please check your network connection and try again later."
+msgstr ""
+
+#: main.lua:242
+msgid "No book is currently open to push progress for."
+msgstr ""
+
+#: main.lua:252
+msgid "Please set the NextGen Server address first."
+msgstr ""
+
+#: main.lua:271
+msgid "invalid username and password"
+msgstr ""
+
+#: main.lua:273
+msgid "invalid username"
+msgstr ""
+
+#: main.lua:275
+msgid "invalid password"
+msgstr ""
+
+#: main.lua:286
+msgid "Sync with CWNG now"
+msgstr ""
+
+#: main.lua:287
+msgid "Push progress from this device"
+msgstr ""
+
+#: main.lua:288
+msgid "Pull progress from other devices"
+msgstr ""
+
+#: main.lua:324
+msgid "CWNG library"
+msgstr ""
+
+#: main.lua:330
+msgid "Connected: %1 at %2"
+msgstr ""
+
+#: main.lua:332
+msgid "Connect this device"
+msgstr ""
+
+#: main.lua:338
+msgid ""
+"This device reads the CWNG library of %1 at %2.\n"
+"\n"
+"To use another account, choose Disconnect this device first."
+msgstr ""
+
+#: main.lua:355
+msgid "Show my library"
+msgstr ""
+
+#: main.lua:363
+msgid "Show my CWNG library on this device"
+msgstr ""
+
+#: main.lua:364
+msgid "Every book in your CWNG library appears here with its cover, or only the books on the shelves you chose for e-readers on the website (the same choice your Kobo uses). Tap a book to download and open it."
+msgstr ""
+
+#: main.lua:382
+msgid "Sync reading automatically"
+msgstr ""
+
+#: main.lua:383
+msgid "Your position, read status and highlights are sent when you close a book or the device sleeps, and brought in whenever the device is online. Wi-Fi is never turned on for this; anything waiting goes the next time it is."
+msgstr ""
+
+#: main.lua:403
+msgid "Include highlights and notes"
+msgstr ""
+
+#: main.lua:411
+msgid "Advanced"
+msgstr ""
+
+#: main.lua:415
+msgid "Disconnect this device"
+msgstr ""
+
+#: main.lua:420
+msgid "Disconnect this device from CWNG? Downloaded books stay on it; covers of books you have not downloaded stay until you connect again."
+msgstr ""
+
+#: main.lua:421
+msgid "Disconnect"
+msgstr ""
+
+#: main.lua:430
+msgid "Plugin version: %1"
+msgstr ""
+
+#: main.lua:434
+msgid ""
+"CWNG library plugin\n"
+"Version: %1\n"
+"\n"
+"Keeps this device's library, reading position, read status and highlights in step with Calibre-Web NextGen."
+msgstr ""
+
+#: main.lua:446
+msgid "Start on the library home"
+msgstr ""
+
+#: main.lua:447
+msgid "Show your books by Reading, Recent, Shelves, Authors and Series instead of KOReader's file browser. The file browser is always one tap away (menu, Browse files)."
+msgstr ""
+
+#: main.lua:460
+msgid "Set NextGen Server"
+msgstr ""
+
+#: main.lua:465
+msgid "NextGen Server Address"
+msgstr ""
+
+#: main.lua:475
+msgid "Logout"
+msgstr ""
+
+#: main.lua:476 main.lua:735
+msgid "Login"
+msgstr ""
+
+#: main.lua:493
+msgid "Document matching method"
+msgstr ""
+
+#: main.lua:494
+msgid "Binary matches file contents. Filename matches the exact name, including its extension, without reading file contents. Use Filename for sideloaded copies whose bytes changed during conversion or metadata editing, keeping the same library or download name. Renamed files will not match; different books with identical names can match each other. Already queued updates keep the identity they were captured with."
+msgstr ""
+
+#: main.lua:497
+msgid "Binary: match file contents"
+msgstr ""
+
+#: main.lua:503
+msgid "Filename: match exact names"
+msgstr ""
+
+#: main.lua:512
+msgid "Periodically sync every # pages (%1)"
+msgstr ""
+
+#: main.lua:519
+msgid ""
+"This value determines how many page turns it takes to update book progress.\n"
+"If set to 0, updating progress based on page turns will be disabled."
+msgstr ""
+
+#: main.lua:526
+msgid "Set"
+msgstr ""
+
+#: main.lua:527
+msgid "Number of pages before update"
+msgstr ""
+
+#: main.lua:539
+msgid "Sync behavior"
+msgstr ""
+
+#: main.lua:544
+msgid "Sync to a newer state (%1)"
+msgstr ""
+
+#: main.lua:548 main.lua:582
+msgid "Silently"
+msgstr ""
+
+#: main.lua:578
+msgid "Sync to an older state (%1)"
+msgstr ""
+
+#: main.lua:614
+msgid "Push progress from this device now"
+msgstr ""
+
+#: main.lua:623
+msgid "Pull progress from other devices now"
+msgstr ""
+
+#: main.lua:633
+msgid "Report books on this device now"
+msgstr ""
+
+#: main.lua:643
+msgid "Collect books queued for this device now"
+msgstr ""
+
+#: main.lua:654
+msgid "Sync highlights now"
+msgstr ""
+
+#: main.lua:670
+msgid " (Password Not Set)"
+msgstr ""
+
+#: main.lua:671
+msgid " (No Active Document)"
+msgstr ""
+
+#: main.lua:690
+msgid "%1 is not a server address. Type it like books.example.com or http://192.168.1.20:8083."
+msgstr ""
+
+#: main.lua:742
+msgid "Cannot login: %1"
+msgstr ""
+
+#: main.lua:755
+msgid "Logging in. Please wait…"
+msgstr ""
+
+#: main.lua:782
+msgid "An error occurred while logging in:"
+msgstr ""
+
+#: main.lua:787
+msgid "An unknown error occurred while logging in."
+msgstr ""
+
+#: main.lua:799
+msgid "Logged in to NextGen server."
+msgstr ""
+
+#: main.lua:803
+msgid "Unknown server error"
+msgstr ""
+
+#: main.lua:1164
+msgid "Please login before reporting this device's library."
+msgstr ""
+
+#: main.lua:1203
+msgid "Device library reported: %1 books, %2 matched."
+msgstr ""
+
+#: main.lua:1213
+msgid "Device library report failed: %1"
+msgstr ""
+
+#: main.lua:1213 main.lua:1487 main.lua:1554 main.lua:1584
+msgid "unknown error"
+msgstr ""
+
+#: main.lua:1456
+msgid "Choose a device library folder before collecting queued books."
+msgstr ""
+
+#: main.lua:1487
+msgid "Queued-book check failed: %1"
+msgstr ""
+
+#: main.lua:1500
+msgid "No books are queued for this device."
+msgstr ""
+
+#: main.lua:1553
+msgid "Queued book could not be installed: %1"
+msgstr ""
+
+#: main.lua:1583
+msgid "Book installed, but confirmation failed: %1"
+msgstr ""
+
+#: main.lua:1605
+msgid "Collected %1 queued books."
+msgstr ""
+
+#: main.lua:1771
+msgid "No supported books were found under %1."
+msgstr ""
+
+#: main.lua:1772
+msgid "No books were found in the current library view."
+msgstr ""
+
+#: main.lua:1803
+msgid "Library sync finished. Remote progress: %1, changed: %2, no remote progress: %3, failed: %4."
+msgstr ""
+
+#: main.lua:1968 main.lua:2087
+msgid "Unable to compute document checksum for this book."
+msgstr ""
+
+#: main.lua:1999 main.lua:2333
+msgid "Progress has been pushed."
+msgstr ""
+
+#: main.lua:2051
+msgid "No book is currently open. Pull progress for all books under %1?"
+msgstr ""
+
+#: main.lua:2052
+msgid "No book is currently open. Pull progress for all books in the current library view?"
+msgstr ""
+
+#: main.lua:2138
+msgid "No progress found for this document."
+msgstr ""
+
+#: main.lua:2168
+msgid "The progress has already been synchronized."
+msgstr ""
+
+#: main.lua:2183
+msgid "The latest position on the server, %1%, was saved from this device. Go to it?"
+msgstr ""
+
+#: main.lua:2225
+msgid "Sync to latest location %1% from device '%2'?"
+msgstr ""
+
+#: main.lua:2241
+msgid "Sync to previous location %1% from device '%2'?"
+msgstr ""
+
+#: main.lua:2415
+msgid "Highlight sync is off."
+msgstr ""
+
+#: main.lua:2437
+msgid "Highlight sync is unavailable for this document."
+msgstr ""
+
+#: main.lua:2520
+msgid "Highlights synced: %1 to device, %2 to server."
+msgstr ""
+
+#: main.lua:2532
+msgid "Highlights synced: %1 to device. Server push failed: %2"
+msgstr ""
+
+#: main.lua:2533
+msgid "Highlights synced: %1 to device. Server push failed."
+msgstr ""
+
+#: main.lua:2541
+msgid "Highlights synced: %1 to device."
+msgstr ""

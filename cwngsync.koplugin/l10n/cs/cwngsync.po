@@ -1,0 +1,806 @@
+# Czech translation of the cwngsync.koplugin KOReader plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: cwngsync.koplugin\n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+
+#: CWNGSyncClient.lua:68 cwng_library_runtime.lua:847
+msgid "no response from server"
+msgstr "server neodpovídá"
+
+#: CWNGSyncClient.lua:71
+msgid "the server took too long to answer"
+msgstr "serveru trvala odpověď příliš dlouho"
+
+#: CWNGSyncClient.lua:73
+msgid "that address does not answer over https"
+msgstr "tato adresa neodpovídá přes https"
+
+#: CWNGSyncClient.lua:75
+msgid "nothing answered at that address"
+msgstr "na této adrese nic neodpovídá"
+
+#: CWNGSyncClient.lua:77
+msgid "that address could not be found"
+msgstr "tuto adresu se nepodařilo najít"
+
+#: CWNGSyncClient.lua:79
+msgid "this device could not reach that address"
+msgstr "toto zařízení se na tuto adresu nedostalo"
+
+#: CWNGSyncClient.lua:83
+msgid "the server answered with error %1"
+msgstr "server odpověděl chybou %1"
+
+#: _meta.lua:12
+msgid "NextGen Progress Sync"
+msgstr "NextGen Progress Sync"
+
+#: _meta.lua:13
+msgid "Synchronizes your reading progress to Calibre-Web NextGen and across your KOReader devices."
+msgstr "Synchronizuje váš postup čtení s Calibre-Web NextGen a mezi vašimi zařízeními s KOReaderem."
+
+#: cwng_auto_sync.lua:412
+msgid "Could not send your reading to CWNG: %1"
+msgstr "Postup čtení se nepodařilo odeslat do CWNG: %1"
+
+#: cwng_auto_sync.lua:425
+msgid "Synced with CWNG."
+msgstr "Synchronizováno s CWNG."
+
+#: cwng_home.lua:42
+msgid "Reading"
+msgstr "Čtu"
+
+#: cwng_home.lua:43
+msgid "Recent"
+msgstr "Nedávné"
+
+#: cwng_home.lua:44
+msgid "Shelves"
+msgstr "Police"
+
+#: cwng_home.lua:45
+msgid "Authors"
+msgstr "Autoři"
+
+#: cwng_home.lua:46
+msgid "Series"
+msgstr "Série"
+
+#: cwng_home.lua:148 cwng_home.lua:361 cwng_home.lua:363 cwng_home.lua:365
+msgid "Library"
+msgstr "Knihovna"
+
+#: cwng_home.lua:339
+msgid "No books match “%1”."
+msgstr "Hledání „%1“ neodpovídají žádné knihy."
+
+#: cwng_home.lua:341
+msgid "No downloaded books here. Choose Show all books in the menu."
+msgstr "Nejsou zde žádné stažené knihy. V nabídce zvolte Zobrazit všechny knihy."
+
+#: cwng_home.lua:343
+msgid "Your books appear here after the first sync."
+msgstr "Vaše knihy se zde zobrazí po první synchronizaci."
+
+#: cwng_home.lua:345
+msgid "Books you start reading appear here."
+msgstr "Zde se zobrazí knihy, které začnete číst."
+
+#: cwng_home.lua:347
+msgid "Shelves you make in CWNG appear here."
+msgstr "Zde se zobrazí police, které vytvoříte v CWNG."
+
+#: cwng_home.lua:349
+msgid "No books in a series."
+msgstr "Žádné knihy v sérii."
+
+#: cwng_home.lua:351
+msgid "Nothing here yet."
+msgstr "Zatím zde nic není."
+
+#: cwng_home.lua:357
+msgid "“%1”"
+msgstr "„%1“"
+
+#: cwng_home.lua:483
+msgid "This book is still being added to this device. Try again in a moment."
+msgstr "Tato kniha se ještě přidává do zařízení. Zkuste to za chvíli znovu."
+
+#: cwng_home.lua:525
+msgid "Open"
+msgstr "Otevřít"
+
+#: cwng_home.lua:525
+msgid "Download and open"
+msgstr "Stáhnout a otevřít"
+
+#: cwng_home.lua:541
+msgid "Search your library"
+msgstr "Hledat v knihovně"
+
+#: cwng_home.lua:543
+msgid "Title, author or series"
+msgstr "Název, autor nebo série"
+
+#: cwng_home.lua:547 cwng_pairing_screen.lua:71 cwng_setup_flow.lua:261 main.lua:728
+msgid "Cancel"
+msgstr "Zrušit"
+
+#: cwng_home.lua:552
+msgid "Search"
+msgstr "Hledat"
+
+#: cwng_home.lua:585
+msgid "CWNG library of %1"
+msgstr "Knihovna CWNG uživatele %1"
+
+#: cwng_home.lua:588 main.lua:350
+msgid "Sync now"
+msgstr "Synchronizovat nyní"
+
+#: cwng_home.lua:592
+msgid "Show all books"
+msgstr "Zobrazit všechny knihy"
+
+#: cwng_home.lua:592
+msgid "Show only downloaded books"
+msgstr "Zobrazit jen stažené knihy"
+
+#: cwng_home.lua:597
+msgid "Browse files"
+msgstr "Procházet soubory"
+
+#: cwng_home.lua:601
+msgid "KOReader menu"
+msgstr "Nabídka KOReaderu"
+
+#: cwng_home.lua:663
+msgid "New on this device: %1"
+msgstr "Nové v tomto zařízení: %1"
+
+#: cwng_home.lua:326
+msgid "1 downloaded book"
+msgid_plural "%1 downloaded books"
+msgstr[0] "%1 stažená kniha"
+msgstr[1] "%1 stažené knihy"
+msgstr[2] "%1 stažených knih"
+
+#: cwng_home.lua:328
+msgid "1 book"
+msgid_plural "%1 books"
+msgstr[0] "%1 kniha"
+msgstr[1] "%1 knihy"
+msgstr[2] "%1 knih"
+
+#: cwng_home.lua:332
+msgid "1 shelf"
+msgid_plural "%1 shelves"
+msgstr[0] "%1 police"
+msgstr[1] "%1 police"
+msgstr[2] "%1 polic"
+
+#: cwng_home.lua:333
+msgid "1 author"
+msgid_plural "%1 authors"
+msgstr[0] "%1 autor"
+msgstr[1] "%1 autoři"
+msgstr[2] "%1 autorů"
+
+#: cwng_home.lua:334
+msgid "1 series"
+msgid_plural "%1 series"
+msgstr[0] "%1 série"
+msgstr[1] "%1 série"
+msgstr[2] "%1 sérií"
+
+#: cwng_library_runtime.lua:670
+msgid "Adding %1 books to your library…"
+msgstr "Přidávám knihy do knihovny (%1)…"
+
+#: cwng_library_runtime.lua:702
+msgid "the network went away; the rest comes on the next sync"
+msgstr "síť vypadla; zbytek přijde při další synchronizaci"
+
+#: cwng_library_runtime.lua:725
+msgid "the server stopped answering; the rest comes on the next sync"
+msgstr "server přestal odpovídat; zbytek přijde při další synchronizaci"
+
+#: cwng_library_runtime.lua:742
+msgid "Adding books to your library: %1 of %2"
+msgstr "Přidávám knihy do knihovny: %1 z %2"
+
+#: cwng_library_runtime.lua:758 cwng_library_runtime.lua:863 cwng_library_runtime.lua:931
+msgid "something went wrong while updating the library"
+msgstr "při aktualizaci knihovny se něco pokazilo"
+
+#: cwng_library_runtime.lua:813
+msgid "Books from the account this device used before are now in the folder “%1”. Menu ▸ Browse files shows them."
+msgstr "Knihy z účtu, který toto zařízení používalo dříve, jsou nyní ve složce „%1“. Najdete je přes Nabídka ▸ Procházet soubory."
+
+#: cwng_library_runtime.lua:817
+msgid "The books this account had on the device before are back in the library."
+msgstr "Knihy, které měl tento účet dříve v zařízení, jsou zpět v knihovně."
+
+#: cwng_library_runtime.lua:839
+msgid "Your library is updated, except %1 books. They are tried again on the next sync."
+msgstr "Knihovna je aktualizována, kromě knih: %1. Zkusí se znovu při další synchronizaci."
+
+#: cwng_library_runtime.lua:844
+msgid "Your library is up to date."
+msgstr "Vaše knihovna je aktuální."
+
+#: cwng_library_runtime.lua:847
+msgid "Could not update your library: %1"
+msgstr "Knihovnu se nepodařilo aktualizovat: %1"
+
+#: cwng_library_runtime.lua:886
+msgid "the server's list of books did not arrive"
+msgstr "seznam knih ze serveru nedorazil"
+
+#: cwng_library_runtime.lua:903
+msgid "the server's list of books did not finish"
+msgstr "seznam knih ze serveru se nedokončil"
+
+#: cwng_library_runtime.lua:909
+msgid "Getting your library list: %1 of %2 books"
+msgstr "Načítám seznam knihovny: %1 z %2 knih"
+
+#: cwng_library_runtime.lua:950
+msgid "the download was incomplete"
+msgstr "stahování bylo neúplné"
+
+#: cwng_library_runtime.lua:955
+msgid "the downloaded file was damaged"
+msgstr "stažený soubor byl poškozený"
+
+#: cwng_library_runtime.lua:1011 cwng_library_runtime.lua:1090
+msgid "Downloading %1…"
+msgstr "Stahuji %1…"
+
+#: cwng_library_runtime.lua:1024
+msgid ""
+"Could not download %1.\n"
+"\n"
+"%2\n"
+"\n"
+"Check that Wi-Fi is on and try again."
+msgstr ""
+"%1 se nepodařilo stáhnout.\n"
+"\n"
+"%2\n"
+"\n"
+"Zkontrolujte, zda je zapnutá Wi-Fi, a zkuste to znovu."
+
+#: cwng_library_runtime.lua:1101
+msgid ""
+"Could not download %1.\n"
+"\n"
+"%2"
+msgstr ""
+"%1 se nepodařilo stáhnout.\n"
+"\n"
+"%2"
+
+#: cwng_pairing_screen.lua:42
+msgid "Connect to your library"
+msgstr "Připojit ke knihovně"
+
+#: cwng_pairing_screen.lua:50
+msgid ""
+"Scan this with your phone's camera and tap Approve.\n"
+"\n"
+"Or open %1 and enter:"
+msgstr ""
+"Naskenujte tento kód fotoaparátem telefonu a klepněte na Schválit.\n"
+"\n"
+"Nebo otevřete %1 a zadejte:"
+
+#: cwng_pairing_screen.lua:64
+msgid "This screen continues by itself once you approve."
+msgstr "Po schválení bude tato obrazovka pokračovat sama."
+
+#: cwng_setup_flow.lua:121
+msgid ""
+"Connected to %1.\n"
+"\n"
+"Your library is being added now. Covers appear as they arrive; tap any book to read it."
+msgstr ""
+"Připojeno k %1.\n"
+"\n"
+"Vaše knihovna se právě přidává. Obálky se zobrazí postupně; klepnutím na libovolnou knihu ji začnete číst."
+
+#: cwng_setup_flow.lua:153
+msgid "The setup file inside the CWNG plugin could not be used. Connect with a code instead: Tools ▸ CWNG library ▸ Connect this device."
+msgstr "Konfigurační soubor v pluginu CWNG nelze použít. Místo toho se připojte pomocí kódu: Nástroje ▸ Knihovna CWNG ▸ Připojit toto zařízení."
+
+#: cwng_setup_flow.lua:174
+msgid "This ready-made plugin's sign-in was switched off on the website. Download a new one, or connect with a code: Tools ▸ CWNG library ▸ Connect this device."
+msgstr "Přihlášení tohoto předpřipraveného pluginu bylo na webu vypnuto. Stáhněte si nový nebo se připojte pomocí kódu: Nástroje ▸ Knihovna CWNG ▸ Připojit toto zařízení."
+
+#: cwng_setup_flow.lua:198
+msgid ""
+"Read your CWNG library on this device.\n"
+"\n"
+"Choose how to connect:"
+msgstr ""
+"Čtěte svou knihovnu CWNG v tomto zařízení.\n"
+"\n"
+"Zvolte způsob připojení:"
+
+#: cwng_setup_flow.lua:202
+msgid "Connect with a code (easiest)"
+msgstr "Připojit pomocí kódu (nejjednodušší)"
+
+#: cwng_setup_flow.lua:209
+msgid "Sign in with username and password"
+msgstr "Přihlásit se jménem a heslem"
+
+#: cwng_setup_flow.lua:223
+msgid "That username or password was not accepted. Try again from Tools ▸ CWNG library ▸ Connect this device."
+msgstr "Toto uživatelské jméno nebo heslo nebylo přijato. Zkuste to znovu přes Nástroje ▸ Knihovna CWNG ▸ Připojit toto zařízení."
+
+#: cwng_setup_flow.lua:224
+msgid "Could not reach %1. Check the address and that this device is on Wi-Fi."
+msgstr "%1 je nedostupný. Zkontrolujte adresu a zda je toto zařízení připojeno k Wi-Fi."
+
+#: cwng_setup_flow.lua:234
+msgid "Not now"
+msgstr "Teď ne"
+
+#: cwng_setup_flow.lua:238
+msgid "Don't ask again"
+msgstr "Už se neptat"
+
+#: cwng_setup_flow.lua:253
+msgid "Your CWNG address"
+msgstr "Vaše adresa CWNG"
+
+#: cwng_setup_flow.lua:254
+msgid "The address you open CWNG at in a browser, for example books.example.com or 192.168.1.20:8083."
+msgstr "Adresa, na které otevíráte CWNG v prohlížeči, například books.example.com nebo 192.168.1.20:8083."
+
+#: cwng_setup_flow.lua:266
+msgid "Continue"
+msgstr "Pokračovat"
+
+#: cwng_setup_flow.lua:273
+msgid "That doesn't look like a web address. Type it the way you would in a browser."
+msgstr "Toto nevypadá jako webová adresa. Zadejte ji tak, jak byste ji zadali v prohlížeči."
+
+#: cwng_setup_flow.lua:318
+msgid "%1 cannot approve devices by code yet. Choose Sign in with username and password instead."
+msgstr "%1 zatím neumí schvalovat zařízení pomocí kódu. Zvolte raději Přihlásit se jménem a heslem."
+
+#: cwng_setup_flow.lua:321
+msgid "%1 did not accept a pairing request. If that is your CWNG address, it may be too old to pair by code: choose Sign in with username and password instead."
+msgstr "%1 nepřijal žádost o spárování. Pokud je to vaše adresa CWNG, může být příliš stará na párování kódem: zvolte raději Přihlásit se jménem a heslem."
+
+#: cwng_setup_flow.lua:330
+msgid ""
+"Could not start pairing with %1: %2\n"
+"\n"
+"Check the address, and that KOReader sync is switched on in CWNG's settings."
+msgstr ""
+"Párování s %1 se nepodařilo spustit: %2\n"
+"\n"
+"Zkontrolujte adresu a zda je v nastavení CWNG zapnutá synchronizace KOReader."
+
+#: cwng_setup_flow.lua:361
+msgid "Lost contact with %1 while waiting for approval. Choose Connect this device to try again."
+msgstr "Během čekání na schválení se ztratilo spojení s %1. Zkuste to znovu přes Připojit toto zařízení."
+
+#: cwng_setup_flow.lua:363 cwng_setup_flow.lua:383
+msgid "The code expired. Choose Connect this device to get a new one."
+msgstr "Platnost kódu vypršela. Nový získáte přes Připojit toto zařízení."
+
+#: cwng_setup_flow.lua:374
+msgid "Approved, but signing in failed. Try Connect this device again."
+msgstr "Schváleno, ale přihlášení selhalo. Zkuste znovu Připojit toto zařízení."
+
+#: cwng_setup_flow.lua:380
+msgid "The request was declined on the website."
+msgstr "Žádost byla na webu zamítnuta."
+
+#: cwng_setup_flow.lua:406
+msgid "This device is disconnected from CWNG. Your downloaded books stay on it."
+msgstr "Toto zařízení je odpojeno od CWNG. Stažené knihy v něm zůstávají."
+
+#: main.lua:48
+msgid "Login to NextGen Server"
+msgstr "Přihlášení k serveru NextGen"
+
+#: main.lua:133
+msgid "KOReader's settings on this e-reader were copied from another device, including its sync ID. This e-reader now has its own ID, so the server lists it as a separate device."
+msgstr "Nastavení KOReaderu v této čtečce byla zkopírována z jiného zařízení včetně synchronizačního ID. Tato čtečka má nyní vlastní ID, takže ji server vede jako samostatné zařízení."
+
+#: main.lua:188
+msgid "Not available"
+msgstr "Nedostupné"
+
+#: main.lua:195 main.lua:566 main.lua:600
+msgid "Never"
+msgstr "Nikdy"
+
+#: main.lua:201 main.lua:557 main.lua:591
+msgid "Prompt"
+msgstr "Zeptat se"
+
+#: main.lua:203
+msgid "Auto"
+msgstr "Automaticky"
+
+#: main.lua:205
+msgid "Disable"
+msgstr "Vypnout"
+
+#: main.lua:211
+msgid "Progress has been synchronized."
+msgstr "Postup byl synchronizován."
+
+#: main.lua:218
+msgid "Please login before using the progress synchronization feature."
+msgstr "Před použitím synchronizace postupu se přihlaste."
+
+#: main.lua:225
+msgid "Something went wrong when syncing progress, please check your network connection and try again later."
+msgstr "Při synchronizaci postupu se něco pokazilo. Zkontrolujte síťové připojení a zkuste to později."
+
+#: main.lua:242
+msgid "No book is currently open to push progress for."
+msgstr "Není otevřena žádná kniha, jejíž postup by šlo odeslat."
+
+#: main.lua:252
+msgid "Please set the NextGen Server address first."
+msgstr "Nejprve nastavte adresu serveru NextGen."
+
+#: main.lua:271
+msgid "invalid username and password"
+msgstr "neplatné uživatelské jméno a heslo"
+
+#: main.lua:273
+msgid "invalid username"
+msgstr "neplatné uživatelské jméno"
+
+#: main.lua:275
+msgid "invalid password"
+msgstr "neplatné heslo"
+
+#: main.lua:286
+msgid "Sync with CWNG now"
+msgstr "Synchronizovat s CWNG nyní"
+
+#: main.lua:287
+msgid "Push progress from this device"
+msgstr "Odeslat postup z tohoto zařízení"
+
+#: main.lua:288
+msgid "Pull progress from other devices"
+msgstr "Načíst postup z jiných zařízení"
+
+#: main.lua:324
+msgid "CWNG library"
+msgstr "Knihovna CWNG"
+
+#: main.lua:330
+msgid "Connected: %1 at %2"
+msgstr "Připojeno: %1 na %2"
+
+#: main.lua:332
+msgid "Connect this device"
+msgstr "Připojit toto zařízení"
+
+#: main.lua:338
+msgid ""
+"This device reads the CWNG library of %1 at %2.\n"
+"\n"
+"To use another account, choose Disconnect this device first."
+msgstr ""
+"Toto zařízení čte knihovnu CWNG uživatele %1 na %2.\n"
+"\n"
+"Chcete-li použít jiný účet, nejprve zvolte Odpojit toto zařízení."
+
+#: main.lua:355
+msgid "Show my library"
+msgstr "Zobrazit mou knihovnu"
+
+#: main.lua:363
+msgid "Show my CWNG library on this device"
+msgstr "Zobrazit mou knihovnu CWNG v tomto zařízení"
+
+#: main.lua:364
+msgid "Every book in your CWNG library appears here with its cover, or only the books on the shelves you chose for e-readers on the website (the same choice your Kobo uses). Tap a book to download and open it."
+msgstr "Zobrazí se zde každá kniha z vaší knihovny CWNG s obálkou, nebo jen knihy z polic, které jste na webu vybrali pro čtečky (stejný výběr, jaký používá váš Kobo). Klepnutím na knihu ji stáhnete a otevřete."
+
+#: main.lua:382
+msgid "Sync reading automatically"
+msgstr "Synchronizovat čtení automaticky"
+
+#: main.lua:383
+msgid "Your position, read status and highlights are sent when you close a book or the device sleeps, and brought in whenever the device is online. Wi-Fi is never turned on for this; anything waiting goes the next time it is."
+msgstr "Vaše pozice, stav přečtení a zvýraznění se odešlou, když zavřete knihu nebo zařízení přejde do spánku, a načtou se vždy, když je zařízení online. Wi-Fi se kvůli tomu nikdy nezapíná; co čeká, se odešle při nejbližším připojení."
+
+#: main.lua:403
+msgid "Include highlights and notes"
+msgstr "Včetně zvýraznění a poznámek"
+
+#: main.lua:411
+msgid "Advanced"
+msgstr "Pokročilé"
+
+#: main.lua:415
+msgid "Disconnect this device"
+msgstr "Odpojit toto zařízení"
+
+#: main.lua:420
+msgid "Disconnect this device from CWNG? Downloaded books stay on it; covers of books you have not downloaded stay until you connect again."
+msgstr "Odpojit toto zařízení od CWNG? Stažené knihy v něm zůstanou; obálky nestažených knih zůstanou, dokud se znovu nepřipojíte."
+
+#: main.lua:421
+msgid "Disconnect"
+msgstr "Odpojit"
+
+#: main.lua:430
+msgid "Plugin version: %1"
+msgstr "Verze pluginu: %1"
+
+#: main.lua:434
+msgid ""
+"CWNG library plugin\n"
+"Version: %1\n"
+"\n"
+"Keeps this device's library, reading position, read status and highlights in step with Calibre-Web NextGen."
+msgstr ""
+"Plugin knihovny CWNG\n"
+"Verze: %1\n"
+"\n"
+"Udržuje knihovnu tohoto zařízení, pozici čtení, stav přečtení a zvýraznění v souladu s Calibre-Web NextGen."
+
+#: main.lua:446
+msgid "Start on the library home"
+msgstr "Spouštět na domovské obrazovce knihovny"
+
+#: main.lua:447
+msgid "Show your books by Reading, Recent, Shelves, Authors and Series instead of KOReader's file browser. The file browser is always one tap away (menu, Browse files)."
+msgstr "Zobrazí vaše knihy podle kategorií Čtu, Nedávné, Police, Autoři a Série místo prohlížeče souborů KOReaderu. Prohlížeč souborů je vždy na jedno klepnutí (nabídka, Procházet soubory)."
+
+#: main.lua:460
+msgid "Set NextGen Server"
+msgstr "Nastavit server NextGen"
+
+#: main.lua:465
+msgid "NextGen Server Address"
+msgstr "Adresa serveru NextGen"
+
+#: main.lua:475
+msgid "Logout"
+msgstr "Odhlásit se"
+
+#: main.lua:476 main.lua:735
+msgid "Login"
+msgstr "Přihlásit se"
+
+#: main.lua:493
+msgid "Document matching method"
+msgstr "Způsob párování dokumentů"
+
+#: main.lua:494
+msgid "Binary matches file contents. Filename matches the exact name, including its extension, without reading file contents. Use Filename for sideloaded copies whose bytes changed during conversion or metadata editing, keeping the same library or download name. Renamed files will not match; different books with identical names can match each other. Already queued updates keep the identity they were captured with."
+msgstr "Binárně porovnává obsah souboru. Podle názvu porovnává přesný název včetně přípony bez čtení obsahu souboru. Podle názvu použijte pro ručně nahrané kopie, jejichž bajty se změnily při konverzi nebo úpravě metadat, ale mají stejný název v knihovně nebo při stažení. Přejmenované soubory se nespárují; různé knihy se stejným názvem se mohou spárovat navzájem. Již zařazené aktualizace si ponechají identitu, se kterou byly zachyceny."
+
+#: main.lua:497
+msgid "Binary: match file contents"
+msgstr "Binárně: porovnat obsah souborů"
+
+#: main.lua:503
+msgid "Filename: match exact names"
+msgstr "Podle názvu: porovnat přesné názvy"
+
+#: main.lua:512
+msgid "Periodically sync every # pages (%1)"
+msgstr "Pravidelně synchronizovat každých # stran (%1)"
+
+#: main.lua:519
+msgid ""
+"This value determines how many page turns it takes to update book progress.\n"
+"If set to 0, updating progress based on page turns will be disabled."
+msgstr ""
+"Tato hodnota určuje, po kolika otočeních stránky se aktualizuje postup v knize.\n"
+"Pokud je nastavena na 0, aktualizace postupu podle otočených stránek je vypnutá."
+
+#: main.lua:526
+msgid "Set"
+msgstr "Nastavit"
+
+#: main.lua:527
+msgid "Number of pages before update"
+msgstr "Počet stran před aktualizací"
+
+#: main.lua:539
+msgid "Sync behavior"
+msgstr "Chování synchronizace"
+
+#: main.lua:544
+msgid "Sync to a newer state (%1)"
+msgstr "Synchronizovat na novější stav (%1)"
+
+#: main.lua:548 main.lua:582
+msgid "Silently"
+msgstr "Potichu"
+
+#: main.lua:578
+msgid "Sync to an older state (%1)"
+msgstr "Synchronizovat na starší stav (%1)"
+
+#: main.lua:614
+msgid "Push progress from this device now"
+msgstr "Odeslat postup z tohoto zařízení nyní"
+
+#: main.lua:623
+msgid "Pull progress from other devices now"
+msgstr "Načíst postup z jiných zařízení nyní"
+
+#: main.lua:633
+msgid "Report books on this device now"
+msgstr "Nahlásit knihy v tomto zařízení nyní"
+
+#: main.lua:643
+msgid "Collect books queued for this device now"
+msgstr "Převzít knihy zařazené pro toto zařízení nyní"
+
+#: main.lua:654
+msgid "Sync highlights now"
+msgstr "Synchronizovat zvýraznění nyní"
+
+#: main.lua:670
+msgid " (Password Not Set)"
+msgstr " (heslo není nastaveno)"
+
+#: main.lua:671
+msgid " (No Active Document)"
+msgstr " (žádný otevřený dokument)"
+
+#: main.lua:690
+msgid "%1 is not a server address. Type it like books.example.com or http://192.168.1.20:8083."
+msgstr "%1 není adresa serveru. Zadejte ji například jako books.example.com nebo http://192.168.1.20:8083."
+
+#: main.lua:742
+msgid "Cannot login: %1"
+msgstr "Nelze se přihlásit: %1"
+
+#: main.lua:755
+msgid "Logging in. Please wait…"
+msgstr "Přihlašuji. Čekejte, prosím…"
+
+#: main.lua:782
+msgid "An error occurred while logging in:"
+msgstr "Při přihlašování došlo k chybě:"
+
+#: main.lua:787
+msgid "An unknown error occurred while logging in."
+msgstr "Při přihlašování došlo k neznámé chybě."
+
+#: main.lua:799
+msgid "Logged in to NextGen server."
+msgstr "Přihlášeno k serveru NextGen."
+
+#: main.lua:803
+msgid "Unknown server error"
+msgstr "Neznámá chyba serveru"
+
+#: main.lua:1164
+msgid "Please login before reporting this device's library."
+msgstr "Před nahlášením knihovny tohoto zařízení se přihlaste."
+
+#: main.lua:1203
+msgid "Device library reported: %1 books, %2 matched."
+msgstr "Knihovna zařízení nahlášena: knih %1, spárováno %2."
+
+#: main.lua:1213
+msgid "Device library report failed: %1"
+msgstr "Nahlášení knihovny zařízení selhalo: %1"
+
+#: main.lua:1213 main.lua:1487 main.lua:1554 main.lua:1584
+msgid "unknown error"
+msgstr "neznámá chyba"
+
+#: main.lua:1456
+msgid "Choose a device library folder before collecting queued books."
+msgstr "Před převzetím zařazených knih zvolte složku knihovny zařízení."
+
+#: main.lua:1487
+msgid "Queued-book check failed: %1"
+msgstr "Kontrola zařazených knih selhala: %1"
+
+#: main.lua:1500
+msgid "No books are queued for this device."
+msgstr "Pro toto zařízení nejsou zařazeny žádné knihy."
+
+#: main.lua:1553
+msgid "Queued book could not be installed: %1"
+msgstr "Zařazenou knihu se nepodařilo nainstalovat: %1"
+
+#: main.lua:1583
+msgid "Book installed, but confirmation failed: %1"
+msgstr "Kniha byla nainstalována, ale potvrzení selhalo: %1"
+
+#: main.lua:1605
+msgid "Collected %1 queued books."
+msgstr "Převzaté zařazené knihy: %1."
+
+#: main.lua:1771
+msgid "No supported books were found under %1."
+msgstr "V %1 nebyly nalezeny žádné podporované knihy."
+
+#: main.lua:1772
+msgid "No books were found in the current library view."
+msgstr "V aktuálním zobrazení knihovny nebyly nalezeny žádné knihy."
+
+#: main.lua:1803
+msgid "Library sync finished. Remote progress: %1, changed: %2, no remote progress: %3, failed: %4."
+msgstr "Synchronizace knihovny dokončena. Vzdálený postup: %1, změněno: %2, bez vzdáleného postupu: %3, selhalo: %4."
+
+#: main.lua:1968 main.lua:2087
+msgid "Unable to compute document checksum for this book."
+msgstr "Pro tuto knihu se nepodařilo vypočítat kontrolní součet dokumentu."
+
+#: main.lua:1999 main.lua:2333
+msgid "Progress has been pushed."
+msgstr "Postup byl odeslán."
+
+#: main.lua:2051
+msgid "No book is currently open. Pull progress for all books under %1?"
+msgstr "Není otevřena žádná kniha. Načíst postup pro všechny knihy v %1?"
+
+#: main.lua:2052
+msgid "No book is currently open. Pull progress for all books in the current library view?"
+msgstr "Není otevřena žádná kniha. Načíst postup pro všechny knihy v aktuálním zobrazení knihovny?"
+
+#: main.lua:2138
+msgid "No progress found for this document."
+msgstr "Pro tento dokument nebyl nalezen žádný postup."
+
+#: main.lua:2168
+msgid "The progress has already been synchronized."
+msgstr "Postup již byl synchronizován."
+
+#: main.lua:2183
+msgid "The latest position on the server, %1%, was saved from this device. Go to it?"
+msgstr "Nejnovější pozice na serveru, %1 %, byla uložena z tohoto zařízení. Přejít na ni?"
+
+#: main.lua:2225
+msgid "Sync to latest location %1% from device '%2'?"
+msgstr "Synchronizovat na nejnovější pozici %1 % ze zařízení „%2“?"
+
+#: main.lua:2241
+msgid "Sync to previous location %1% from device '%2'?"
+msgstr "Synchronizovat na předchozí pozici %1 % ze zařízení „%2“?"
+
+#: main.lua:2415
+msgid "Highlight sync is off."
+msgstr "Synchronizace zvýraznění je vypnutá."
+
+#: main.lua:2437
+msgid "Highlight sync is unavailable for this document."
+msgstr "Synchronizace zvýraznění není pro tento dokument dostupná."
+
+#: main.lua:2520
+msgid "Highlights synced: %1 to device, %2 to server."
+msgstr "Zvýraznění synchronizována: %1 do zařízení, %2 na server."
+
+#: main.lua:2532
+msgid "Highlights synced: %1 to device. Server push failed: %2"
+msgstr "Zvýraznění synchronizována: %1 do zařízení. Odeslání na server selhalo: %2"
+
+#: main.lua:2533
+msgid "Highlights synced: %1 to device. Server push failed."
+msgstr "Zvýraznění synchronizována: %1 do zařízení. Odeslání na server selhalo."
+
+#: main.lua:2541
+msgid "Highlights synced: %1 to device."
+msgstr "Zvýraznění synchronizována: %1 do zařízení."

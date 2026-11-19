@@ -1,3 +1,6 @@
+-- Must run before any module below evaluates _() at load time.
+pcall(require, "cwng_l10n")
+
 local BookList = require("ui/widget/booklist")
 local ConfirmBox = require("ui/widget/confirmbox")
 local Delivery = require("delivery")
